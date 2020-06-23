@@ -12,11 +12,14 @@ buildscript {
         classpath 'com.android.tools.build:gradle:4.0.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"
-        classpath 'com.github.ben-manes:gradle-versions-plugin:0.25.0'
+        classpath 'com.github.ben-manes:gradle-versions-plugin:0.28.0'
         classpath 'com.adarshr:gradle-test-logger-plugin:2.0.0'
+        classpath 'com.uber:okbuck:0.50.10'
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+apply plugin: 'com.uber.okbuck'

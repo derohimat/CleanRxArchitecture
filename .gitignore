@@ -3,6 +3,8 @@
 buildsystem
 .gradle
 .DS_Store
+.okbuck
+*BUCK
 
 # LOCAL
 local.properties
