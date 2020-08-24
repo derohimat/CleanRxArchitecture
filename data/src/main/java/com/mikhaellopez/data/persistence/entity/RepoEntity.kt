@@ -9,7 +9,7 @@ import com.mikhaellopez.data.persistence.entity.RepoEntity.Companion.REPO_TABLE
 class RepoEntity(
     @PrimaryKey @ColumnInfo(name = REPO_ID) val id: Long,
     @ColumnInfo(name = REPO_NAME) val name: String,
-    @ColumnInfo(name = REPO_DESCRIPTION) val description: String,
+    @ColumnInfo(name = REPO_DESCRIPTION) val description: String? = null,
     @ColumnInfo(name = REPO_URL) val url: String,
     @ColumnInfo(name = REPO_IS_FAVORITE) val isFavorite: Boolean,
     @ColumnInfo(name = REPO_USER_NAME) val userName: String
